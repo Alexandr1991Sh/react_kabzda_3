@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import OnOff from './components/onOff/OnOff';
-import {Accordion} from "./components/star/Star";
+import {Accordion} from "./components/accordion/Accordion";
+import {Star} from "./components/Star";
 
 
 
@@ -17,6 +18,7 @@ function App() {
                 <Accordion titleValue={'USERS'} />
             </div>
 <OnOff/>
+            <Star/>
         </div>
     );
 }

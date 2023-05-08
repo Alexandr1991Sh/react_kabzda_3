@@ -20,15 +20,9 @@ export const Accordion = (props: AccordionPropsType) => {
         borderRadius: '30px'
     }
 
-
-
-    const onClickHandler = () => {
-        setOn(!on)
-    }
     return (
         <div>
-            {!on && (<button style={styleBtn} onClick={onClickHandler}><AccordionTitle titleValue={props.titleValue}/></button>)}
-            {on && (<button style={styleBtn} onClick={onClickHandler}><AccordionTitle titleValue={props.titleValue}/></button>)}
+           <button style={styleBtn} onClick={()=>{setOn(!on)}}><AccordionTitle titleValue={props.titleValue}/></button>
             {on && <AccordionBody/>}
         </div>
     )
@@ -60,3 +54,5 @@ export const AccordionBody = () => {
         </div>
     )
 }
+
+
